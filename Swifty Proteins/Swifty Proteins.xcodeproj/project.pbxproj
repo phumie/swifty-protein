@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00CA1BCF522F16647D0F71B7 /* Pods_Swifty_Proteins.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D9DA3B4C339F8C24BEAEF12 /* Pods_Swifty_Proteins.framework */; };
+		097C3F4B2319D82AE407E7E0 /* Pods_Swifty_ProteinsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3047F024F6FAC36757FACA85 /* Pods_Swifty_ProteinsTests.framework */; };
+		89F5F2CF799B9E206429F25E /* Pods_Swifty_ProteinsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E2C128034B4611AFD98CB7F /* Pods_Swifty_ProteinsUITests.framework */; };
+		A82DE6762181BE0A000082C4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A82DE6752181BE0A000082C4 /* GoogleService-Info.plist */; };
+		A82DE6782181C0CA000082C4 /* ProteinListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82DE6772181C0CA000082C4 /* ProteinListViewController.swift */; };
 		A83A8660217F0D48003544F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83A865F217F0D48003544F4 /* AppDelegate.swift */; };
 		A83A8662217F0D48003544F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83A8661217F0D48003544F4 /* ViewController.swift */; };
 		A83A8665217F0D48003544F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A83A8663217F0D48003544F4 /* Main.storyboard */; };
@@ -34,6 +39,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		16073F77505FD8B459E5DA99 /* Pods-Swifty ProteinsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swifty ProteinsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Swifty ProteinsTests/Pods-Swifty ProteinsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2D9DA3B4C339F8C24BEAEF12 /* Pods_Swifty_Proteins.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Swifty_Proteins.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3047F024F6FAC36757FACA85 /* Pods_Swifty_ProteinsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Swifty_ProteinsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		330915D7C47387B9A583A6B4 /* Pods-Swifty ProteinsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swifty ProteinsUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Swifty ProteinsUITests/Pods-Swifty ProteinsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		35B0EA0F6FB6FBB578469D61 /* Pods-Swifty ProteinsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swifty ProteinsUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Swifty ProteinsUITests/Pods-Swifty ProteinsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3CDE94EE093CFA81065EB36E /* Pods-Swifty ProteinsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swifty ProteinsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Swifty ProteinsTests/Pods-Swifty ProteinsTests.release.xcconfig"; sourceTree = "<group>"; };
+		4E2C128034B4611AFD98CB7F /* Pods_Swifty_ProteinsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Swifty_ProteinsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6454BF4408D86943BBF25017 /* Pods-Swifty Proteins.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swifty Proteins.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Swifty Proteins/Pods-Swifty Proteins.debug.xcconfig"; sourceTree = "<group>"; };
+		8C9AC152A5B4671481701229 /* Pods-Swifty Proteins.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swifty Proteins.release.xcconfig"; path = "Pods/Target Support Files/Pods-Swifty Proteins/Pods-Swifty Proteins.release.xcconfig"; sourceTree = "<group>"; };
+		A82DE6752181BE0A000082C4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A82DE6772181C0CA000082C4 /* ProteinListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProteinListViewController.swift; sourceTree = "<group>"; };
 		A83A865C217F0D48003544F4 /* Swifty Proteins.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swifty Proteins.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A83A865F217F0D48003544F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A83A8661217F0D48003544F4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00CA1BCF522F16647D0F71B7 /* Pods_Swifty_Proteins.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				097C3F4B2319D82AE407E7E0 /* Pods_Swifty_ProteinsTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +86,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89F5F2CF799B9E206429F25E /* Pods_Swifty_ProteinsUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2566205F3B7463D9DB78FA78 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2D9DA3B4C339F8C24BEAEF12 /* Pods_Swifty_Proteins.framework */,
+				3047F024F6FAC36757FACA85 /* Pods_Swifty_ProteinsTests.framework */,
+				4E2C128034B4611AFD98CB7F /* Pods_Swifty_ProteinsUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6910E6C16FE58465E7C99824 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6454BF4408D86943BBF25017 /* Pods-Swifty Proteins.debug.xcconfig */,
+				8C9AC152A5B4671481701229 /* Pods-Swifty Proteins.release.xcconfig */,
+				16073F77505FD8B459E5DA99 /* Pods-Swifty ProteinsTests.debug.xcconfig */,
+				3CDE94EE093CFA81065EB36E /* Pods-Swifty ProteinsTests.release.xcconfig */,
+				35B0EA0F6FB6FBB578469D61 /* Pods-Swifty ProteinsUITests.debug.xcconfig */,
+				330915D7C47387B9A583A6B4 /* Pods-Swifty ProteinsUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A83A8653217F0D48003544F4 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +123,8 @@
 				A83A8673217F0D4A003544F4 /* Swifty ProteinsTests */,
 				A83A867E217F0D4A003544F4 /* Swifty ProteinsUITests */,
 				A83A865D217F0D48003544F4 /* Products */,
+				6910E6C16FE58465E7C99824 /* Pods */,
+				2566205F3B7463D9DB78FA78 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,8 +144,10 @@
 				A83A865F217F0D48003544F4 /* AppDelegate.swift */,
 				A83A8661217F0D48003544F4 /* ViewController.swift */,
 				A83A8663217F0D48003544F4 /* Main.storyboard */,
+				A82DE6772181C0CA000082C4 /* ProteinListViewController.swift */,
 				A83A8666217F0D4A003544F4 /* Assets.xcassets */,
 				A83A8668217F0D4A003544F4 /* LaunchScreen.storyboard */,
+				A82DE6752181BE0A000082C4 /* GoogleService-Info.plist */,
 				A83A866B217F0D4A003544F4 /* Info.plist */,
 			);
 			path = "Swifty Proteins";
@@ -132,9 +178,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A83A8684217F0D4A003544F4 /* Build configuration list for PBXNativeTarget "Swifty Proteins" */;
 			buildPhases = (
+				418573043F1AB4EAD220F6F8 /* [CP] Check Pods Manifest.lock */,
 				A83A8658217F0D48003544F4 /* Sources */,
 				A83A8659217F0D48003544F4 /* Frameworks */,
 				A83A865A217F0D48003544F4 /* Resources */,
+				78B13B28708905F18EF82D57 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +197,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A83A8687217F0D4A003544F4 /* Build configuration list for PBXNativeTarget "Swifty ProteinsTests" */;
 			buildPhases = (
+				8ADC3593BC37D5B8C7FCDEA8 /* [CP] Check Pods Manifest.lock */,
 				A83A866C217F0D4A003544F4 /* Sources */,
 				A83A866D217F0D4A003544F4 /* Frameworks */,
 				A83A866E217F0D4A003544F4 /* Resources */,
@@ -167,6 +216,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A83A868A217F0D4A003544F4 /* Build configuration list for PBXNativeTarget "Swifty ProteinsUITests" */;
 			buildPhases = (
+				808F3077A5A0C7F4857D58A4 /* [CP] Check Pods Manifest.lock */,
 				A83A8677217F0D4A003544F4 /* Sources */,
 				A83A8678217F0D4A003544F4 /* Frameworks */,
 				A83A8679217F0D4A003544F4 /* Resources */,
@@ -230,6 +280,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A83A866A217F0D4A003544F4 /* LaunchScreen.storyboard in Resources */,
+				A82DE6762181BE0A000082C4 /* GoogleService-Info.plist in Resources */,
 				A83A8667217F0D4A003544F4 /* Assets.xcassets in Resources */,
 				A83A8665217F0D48003544F4 /* Main.storyboard in Resources */,
 			);
@@ -251,6 +302,87 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		418573043F1AB4EAD220F6F8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Swifty Proteins-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		78B13B28708905F18EF82D57 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Swifty Proteins/Pods-Swifty Proteins-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Swifty Proteins/Pods-Swifty Proteins-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		808F3077A5A0C7F4857D58A4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Swifty ProteinsUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8ADC3593BC37D5B8C7FCDEA8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Swifty ProteinsTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A83A8658217F0D48003544F4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -258,6 +390,7 @@
 			files = (
 				A83A8662217F0D48003544F4 /* ViewController.swift in Sources */,
 				A83A8660217F0D48003544F4 /* AppDelegate.swift in Sources */,
+				A82DE6782181C0CA000082C4 /* ProteinListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,6 +561,7 @@
 		};
 		A83A8685217F0D4A003544F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6454BF4408D86943BBF25017 /* Pods-Swifty Proteins.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -445,6 +579,7 @@
 		};
 		A83A8686217F0D4A003544F4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C9AC152A5B4671481701229 /* Pods-Swifty Proteins.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -462,6 +597,7 @@
 		};
 		A83A8688217F0D4A003544F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16073F77505FD8B459E5DA99 /* Pods-Swifty ProteinsTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -482,6 +618,7 @@
 		};
 		A83A8689217F0D4A003544F4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CDE94EE093CFA81065EB36E /* Pods-Swifty ProteinsTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -502,6 +639,7 @@
 		};
 		A83A868B217F0D4A003544F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35B0EA0F6FB6FBB578469D61 /* Pods-Swifty ProteinsUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -521,6 +659,7 @@
 		};
 		A83A868C217F0D4A003544F4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 330915D7C47387B9A583A6B4 /* Pods-Swifty ProteinsUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

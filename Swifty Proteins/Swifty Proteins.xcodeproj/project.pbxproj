@@ -10,6 +10,8 @@
 		00CA1BCF522F16647D0F71B7 /* Pods_Swifty_Proteins.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D9DA3B4C339F8C24BEAEF12 /* Pods_Swifty_Proteins.framework */; };
 		097C3F4B2319D82AE407E7E0 /* Pods_Swifty_ProteinsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3047F024F6FAC36757FACA85 /* Pods_Swifty_ProteinsTests.framework */; };
 		89F5F2CF799B9E206429F25E /* Pods_Swifty_ProteinsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E2C128034B4611AFD98CB7F /* Pods_Swifty_ProteinsUITests.framework */; };
+		A82A769E2187288B0038133A /* Atom.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82A769D2187288B0038133A /* Atom.swift */; };
+		A82A76A2218736EA0038133A /* ProteinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82A76A1218736EA0038133A /* ProteinViewController.swift */; };
 		A82DE6762181BE0A000082C4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A82DE6752181BE0A000082C4 /* GoogleService-Info.plist */; };
 		A82DE6782181C0CA000082C4 /* ProteinListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82DE6772181C0CA000082C4 /* ProteinListViewController.swift */; };
 		A83A8660217F0D48003544F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83A865F217F0D48003544F4 /* AppDelegate.swift */; };
@@ -48,6 +50,8 @@
 		4E2C128034B4611AFD98CB7F /* Pods_Swifty_ProteinsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Swifty_ProteinsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6454BF4408D86943BBF25017 /* Pods-Swifty Proteins.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swifty Proteins.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Swifty Proteins/Pods-Swifty Proteins.debug.xcconfig"; sourceTree = "<group>"; };
 		8C9AC152A5B4671481701229 /* Pods-Swifty Proteins.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swifty Proteins.release.xcconfig"; path = "Pods/Target Support Files/Pods-Swifty Proteins/Pods-Swifty Proteins.release.xcconfig"; sourceTree = "<group>"; };
+		A82A769D2187288B0038133A /* Atom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Atom.swift; sourceTree = "<group>"; };
+		A82A76A1218736EA0038133A /* ProteinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProteinViewController.swift; sourceTree = "<group>"; };
 		A82DE6752181BE0A000082C4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A82DE6772181C0CA000082C4 /* ProteinListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProteinListViewController.swift; sourceTree = "<group>"; };
 		A83A865C217F0D48003544F4 /* Swifty Proteins.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swifty Proteins.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -144,11 +148,13 @@
 				A83A865F217F0D48003544F4 /* AppDelegate.swift */,
 				A83A8661217F0D48003544F4 /* ViewController.swift */,
 				A83A8663217F0D48003544F4 /* Main.storyboard */,
+				A82A76A1218736EA0038133A /* ProteinViewController.swift */,
 				A82DE6772181C0CA000082C4 /* ProteinListViewController.swift */,
 				A83A8666217F0D4A003544F4 /* Assets.xcassets */,
 				A83A8668217F0D4A003544F4 /* LaunchScreen.storyboard */,
 				A82DE6752181BE0A000082C4 /* GoogleService-Info.plist */,
 				A83A866B217F0D4A003544F4 /* Info.plist */,
+				A82A769D2187288B0038133A /* Atom.swift */,
 			);
 			path = "Swifty Proteins";
 			sourceTree = "<group>";
@@ -390,6 +396,8 @@
 			files = (
 				A83A8662217F0D48003544F4 /* ViewController.swift in Sources */,
 				A83A8660217F0D48003544F4 /* AppDelegate.swift in Sources */,
+				A82A76A2218736EA0038133A /* ProteinViewController.swift in Sources */,
+				A82A769E2187288B0038133A /* Atom.swift in Sources */,
 				A82DE6782181C0CA000082C4 /* ProteinListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

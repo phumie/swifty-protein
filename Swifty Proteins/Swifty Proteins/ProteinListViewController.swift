@@ -16,6 +16,8 @@ class ProteinListViewController: UIViewController, UITableViewDelegate, UITableV
     var activityIndicator: UIActivityIndicatorView = UIActivityIndicatorView()
     var array: [String] = []
     var filePath: String?
+    var searchArray = [String]()
+    var searching = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,7 +44,6 @@ class ProteinListViewController: UIViewController, UITableViewDelegate, UITableV
         do {
             let contents = try String(contentsOf: filePath!)
             array = contents.components(separatedBy: "\n")
-            print(array)
         } catch {
             self.showAlertController("Couldn't read the contents!")
             print("Fatal Error: Couldn't read the contents!")
@@ -50,13 +51,20 @@ class ProteinListViewController: UIViewController, UITableViewDelegate, UITableV
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if (searching) {
+            return (searchArray.count)
+        }
         return (array.count)
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        print(array.count)
         let cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "ligandCell")
-        cell.textLabel?.text = array[indexPath.row]
+        if (searching) {
+            cell.textLabel?.text = searchArray[indexPath.row]
+        }
+        else {
+            cell.textLabel?.text = array[indexPath.row]
+        }
         activityIndicator.stopAnimating()
         
         return (cell)
@@ -64,21 +72,28 @@ class ProteinListViewController: UIViewController, UITableViewDelegate, UITableV
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let newViewController = storyBoard.instantiateViewController(withIdentifier: "ProteinView")
+        let newViewController = storyBoard.instantiateViewController(withIdentifier: "ProteinViewController") as! ProteinViewController
+        newViewController.passedProtein = array[indexPath.row]
         self.present(newViewController, animated: true, completion: nil)
-        
-        print("Cell cliked value is: " + array[indexPath.row])
     }
-    
-    @IBAction func closeBtn(_ sender: UIBarButtonItem) {
-        self.dismiss(animated: true, completion: nil)
-    }
-    
     
     func showAlertController(_ message: String) {
         let alertController = UIAlertController(title: nil, message: message, preferredStyle: .alert)
         alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
         present(alertController, animated: true, completion: nil)
     }
+}
+
+extension ProteinListViewController : UISearchBarDelegate {
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        searchArray = array.filter({$0.prefix(searchText.count) == searchText})
+        searching = true
+        proteinTable.reloadData()
+    }
     
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        searching = false
+        searchBar.text = ""
+        proteinTable.reloadData()
+    }
 }

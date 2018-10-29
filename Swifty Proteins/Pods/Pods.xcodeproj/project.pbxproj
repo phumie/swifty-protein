@@ -452,7 +452,6 @@
 		A6488A63AE67CF888E0037C05203F3AF /* version_set.h in Headers */ = {isa = PBXBuildFile; fileRef = 632B91CFBE776C05FE34D21CAAE48E09 /* version_set.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		A68C7BC6AB0B9C252C287012E89F9CC4 /* FTreeSortedDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = 0641426F440947DD9567014297C8952D /* FTreeSortedDictionary.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		A79F0B08CCEA7CBE25EE60A8BB176F9E /* port_posix_sse.cc in Sources */ = {isa = PBXBuildFile; fileRef = 78AD39B5089701C9ABA93B19657A6081 /* port_posix_sse.cc */; settings = {COMPILER_FLAGS = "-DOS_MACOSX -DLEVELDB_PLATFORM_POSIX -fno-objc-arc"; }; };
-		A82DE67A2181FED6000082C4 /* ProteinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82DE6792181FED6000082C4 /* ProteinViewController.swift */; };
 		A83D61F9A3CB22B42032430257ED8243 /* FOperationSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A6B070AD54AF126C3393EC41C85005A /* FOperationSource.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		A9D4B18540E7CC5B0D747D1CB2DDC3E6 /* FIRAuthSerialTaskQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E2B99378333BF59257C3CBA140212A6 /* FIRAuthSerialTaskQueue.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		AA51DB49CD28CCF0C0CEE2049FC71801 /* FIRAuthAppDelegateProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = A046805FD6B4A071642E4B72E35AF75C /* FIRAuthAppDelegateProxy.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -1286,7 +1285,6 @@
 		A75693B70496B5B12E2BDB9EC97E71A9 /* FIRAuthInterop.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRAuthInterop.h; path = Interop/Auth/Public/FIRAuthInterop.h; sourceTree = "<group>"; };
 		A7624EA73A2009DF375374EC04B84F64 /* FAckUserWrite.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FAckUserWrite.m; path = Firebase/Database/Core/Operation/FAckUserWrite.m; sourceTree = "<group>"; };
 		A7F5FA8FF6914466F547D63663E48223 /* FWriteRecord.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FWriteRecord.m; path = Firebase/Database/Core/FWriteRecord.m; sourceTree = "<group>"; };
-		A82DE6792181FED6000082C4 /* ProteinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProteinViewController.swift; sourceTree = "<group>"; };
 		A85D2EA7C8C60B3CDA6FDEDAF3C5E7AA /* GULMutableDictionary.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GULMutableDictionary.m; path = GoogleUtilities/Network/GULMutableDictionary.m; sourceTree = "<group>"; };
 		A85DE5EE2EE996178673DBFBA8370800 /* FIRStorageUpdateMetadataTask.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRStorageUpdateMetadataTask.h; path = Firebase/Storage/Private/FIRStorageUpdateMetadataTask.h; sourceTree = "<group>"; };
 		A8E0A523BD7079F0D0AE478D7CD9EE9E /* FIRResetPasswordRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRResetPasswordRequest.h; path = Firebase/Auth/Source/RPCs/FIRResetPasswordRequest.h; sourceTree = "<group>"; };
@@ -2567,7 +2565,6 @@
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
-				A82DE6792181FED6000082C4 /* ProteinViewController.swift */,
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				20B56609144CE204DFA8221F742B2D76 /* Frameworks */,
 				001280E0D3A92FDED9119F2DBB3E06A2 /* Pods */,
@@ -3671,7 +3668,6 @@
 				1A6598A2B10CFB4230870373787FFAA9 /* FIRAuthGlobalWorkQueue.m in Sources */,
 				4CE840BAD0BA33BF85AACA008790EB86 /* FIRAuthKeychain.m in Sources */,
 				95562F069A6F97C757CC2C614BBD0157 /* FIRAuthNotificationManager.m in Sources */,
-				A82DE67A2181FED6000082C4 /* ProteinViewController.swift in Sources */,
 				BEC04638773E19704E5C7EF8867F614F /* FIRAuthProvider.m in Sources */,
 				3FE439D36ECDC2934ACFB3479D05E687 /* FIRAuthRequestConfiguration.m in Sources */,
 				D1C9B365E0531E493373876559407FB2 /* FIRAuthSerialTaskQueue.m in Sources */,

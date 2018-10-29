@@ -20,25 +20,15 @@ class ViewController: UIViewController {
     }
     
     @IBAction func touchBtn(_ sender: Any) {
-
-        let context = LAContext()
-        var error: NSError?
-        
-        // check if Touch ID is available
-        if context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error) {
-            let reason = "Authenticate with Touch ID"
-            context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: reason, reply:
-                {(succes, error) in
-                    if succes {
-                        self.showAlertController("Touch ID Authentication Succeeded")
-                    }
-                    else {
-                        self.showAlertController("Touch ID Authentication Failed")
-                    }
-                    } as (Bool, Error?) -> Void)
+        if touchID() == 0 {
+            self.showAlertController("Touch ID Authentication Succeeded")
         }
-        else {
-            showAlertController("Touch ID not available")
+        else if touchID() == 1 {
+            self.showAlertController("Touch ID Authentication Failed")
+        }
+        else if touchID() == -1 {
+            let disableMyButton = sender as? UIButton
+            disableMyButton?.isEnabled = false
         }
     }
     
@@ -64,12 +54,37 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
     }
     
     func showAlertController(_ message: String) {
         let alertController = UIAlertController(title: nil, message: message, preferredStyle: .alert)
         alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
         present(alertController, animated: true, completion: nil)
+    }
+    
+    func touchID() -> Int {
+        let context = LAContext()
+        var error: NSError?
+        var ret = -1;
+        
+        // check if Touch ID is available
+        if context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error) {
+            let reason = "Authenticate with Touch ID"
+            context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: reason, reply:
+                {(succes, error) in
+                    if succes {
+                        ret = 0;
+                    }
+                    else {
+                        ret = 1;
+                    }
+                    } as (Bool, Error?) -> Void)
+        }
+        else {
+            ret = -1;
+        }
+        return ret;
     }
 
     override func didReceiveMemoryWarning() {

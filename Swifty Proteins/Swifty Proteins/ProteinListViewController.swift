@@ -86,7 +86,7 @@ class ProteinListViewController: UIViewController, UITableViewDelegate, UITableV
 
 extension ProteinListViewController : UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        searchArray = array.filter({$0.prefix(searchText.count) == searchText})
+        searchArray = array.filter({$0.contains(searchText)})
         searching = true
         proteinTable.reloadData()
     }

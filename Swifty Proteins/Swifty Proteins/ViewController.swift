@@ -33,23 +33,28 @@ class ViewController: UIViewController {
     }
     
     func login() {
-        if (self.username.text == "" || self.password.text == ""){
-            self.showAlertController("Username or Password cannot be empty.")
-            return;
-        }
-        else{
-            Auth.auth().signIn(withEmail: self.username.text!, password: self.password.text!) { (user, error) in
-                if error == nil {
-                    let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-                    let newViewController = storyBoard.instantiateViewController(withIdentifier: "ProteinListView")
-                    self.present(newViewController, animated: true, completion: nil)
-                    print("successfully logged in");
-                }
-                else{
-                    self.showAlertController("Authentication failed. Try again.")
-                }
-            }
-        }
+//        if (self.username.text == "" || self.password.text == ""){
+//            self.showAlertController("Username or Password cannot be empty.")
+//            return;
+//        }
+//        else{
+//            Auth.auth().signIn(withEmail: self.username.text!, password: self.password.text!) { (user, error) in
+//                if error == nil {
+//                    let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+//                    let newViewController = storyBoard.instantiateViewController(withIdentifier: "ProteinListView")
+//                    self.present(newViewController, animated: true, completion: nil)
+//                    print("successfully logged in");
+//                }
+//                else{
+//                    self.showAlertController("Authentication failed. Try again.")
+//                }
+//            }
+//        }
+        
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let newViewController = storyBoard.instantiateViewController(withIdentifier: "ProteinListView")
+        self.present(newViewController, animated: true, completion: nil)
+        print("successfully logged in");
     }
     
     override func viewDidLoad() {

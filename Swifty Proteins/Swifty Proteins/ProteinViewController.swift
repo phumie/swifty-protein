@@ -47,7 +47,6 @@ class ProteinViewController: UIViewController {
             }
         }
         
-//        let tap = UITapGestureRecognizer(target: self, action: #selector(elementTapped))
         let tap = UITapGestureRecognizer(target: self, action: #selector(elementTapped(tap:)))
         self.sceneView.addGestureRecognizer(tap)
     }
@@ -78,7 +77,6 @@ class ProteinViewController: UIViewController {
         }
         
         
-        //create Scene here!!!
         self.sceneView.scene = AtomsView(ligands: atoms)
 
         let cameraNode = SCNNode()

@@ -84,11 +84,22 @@ class ProteinListViewController: UIViewController, UITableViewDelegate, UITableV
     }
 }
 
-extension ProteinListViewController : UISearchBarDelegate {
-    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        searchArray = array.filter({$0.contains(searchText)})
-        searching = true
-        proteinTable.reloadData()
+extension ProteinListViewController : UISearchBarDelegate
+{
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String)
+    {
+        if searchText == ""
+        {
+            
+            searching = false
+            proteinTable.reloadData()
+        }
+        else
+        {
+            searchArray = array.filter({$0.contains(searchText)})
+            searching = true
+            proteinTable.reloadData()
+        }
     }
     
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
